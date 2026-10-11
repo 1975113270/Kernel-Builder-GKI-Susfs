@@ -37,16 +37,16 @@ on:
         description: "Integrate Root Manager and SUSFS?"
         required: false
         type: boolean
-        default: true
-        
-      enable_nomount:
-        description: "Inject nomount VFS module"
-        required: false
-        type: boolean
-        default: false
+        default: true      
         
       enable_net_opts:
         description: "Inject Network Optimizations (BBR, CAKE, FastOpen, ECN)"
+        required: false
+        type: boolean
+        default: false
+
+      enable_nomount:
+        description: "Inject nomount VFS module"
         required: false
         type: boolean
         default: false
